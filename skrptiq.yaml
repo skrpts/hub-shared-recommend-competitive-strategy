@@ -1,0 +1,25 @@
+# --- Identity ---
+id: "9889a194-32c5-41e0-a4df-7ce0eef9da90"
+name: "recommend-competitive-strategy"
+display_name: "Recommend Strategy"
+description: "Produces prioritised competitive strategy recommendations from the comparative analysis"
+version: "1.0.0"
+engine: ">=0.1.0"
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/hub-shared-recommend-competitive-strategy"
+category: "shared"
+tags:
+  - "shared"
+  - "prompt"
+contents:
+  skills: 0
+  prompts: 1
+  workflows: 0
+  services: 0
+  sources: 0
+  documents: 0
+  assets: 0
+  total: 1
