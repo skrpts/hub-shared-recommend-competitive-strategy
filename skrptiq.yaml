@@ -1,9 +1,9 @@
 # --- Identity ---
-id: "9889a194-32c5-41e0-a4df-7ce0eef9da90"
+id: "3a1c252f-a918-4e5b-9eb0-e7ba6316e69a"
 name: "recommend-competitive-strategy"
 display_name: "Recommend Strategy"
 description: "Produces prioritised competitive strategy recommendations from the comparative analysis"
-version: "1.0.0"
+version: "1.0.1"
 engine: ">=0.1.0"
 author:
   name: "skrptiq"
