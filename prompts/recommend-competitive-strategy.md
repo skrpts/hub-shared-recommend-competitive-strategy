@@ -2,8 +2,13 @@
 type: prompt
 id: recommend-competitive-strategy
 title: Recommend Strategy
-description: "Produces prioritised competitive strategy recommendations from the comparative analysis"
+description: "Produces prioritized competitive strategy recommendations from the comparative analysis"
 tags: [Production, Competitive, Strategy]
+context_params:
+  source:
+    label: "Competitive Analysis"
+    description: "The consolidated competitive analysis supplied by the upstream step."
+    required: true
 inputs:
   your_product:
     label: "Your Product"
@@ -22,7 +27,7 @@ Drives the strategic recommendation skill. Runs after the consolidation step. Tr
 
 ## Prompt
 
-You are a product strategist advising a leadership team. Based on the competitive analysis below, produce prioritised strategic recommendations.
+You are a product strategist advising a leadership team. Based on the competitive analysis below, produce prioritized strategic recommendations.
 
 ### Your Product
 
@@ -30,7 +35,7 @@ You are a product strategist advising a leadership team. Based on the competitiv
 
 ### Competitive Analysis
 
-{{steps.Competitive Consolidation.output}}
+{{step.context.source}}
 
 ### Instructions
 
@@ -55,7 +60,7 @@ List 1-2 recommendations for capabilities or markets where no competitor is stro
 
 ### Priority Summary
 
-After the detailed recommendations, produce a single prioritised table:
+After the detailed recommendations, produce a single prioritized table:
 
 | Priority | Action | Category | Impact | Timeframe |
 |----------|--------|----------|--------|-----------|
